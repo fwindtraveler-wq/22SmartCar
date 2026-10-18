@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>裁判/交互/远程干预一体化终端</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <div class="title">一体化操作终端</div>
+    <div id="referee-badge" class="badge">READY</div>
+  </header>
+  <main>
+    <section class="panel">
+      <h2>任务控制</h2>
+      <div class="buttons">
+        <button data-action="start_task">启动任务</button>
+        <button data-action="pause">暂停</button>
+        <button data-action="resume">继续</button>
+        <button data-action="skip_current">跳过当前节点</button>
+        <button data-action="help">请求裁判</button>
+        <button data-action="emergency_stop" class="danger">紧急停车</button>
+        <button data-action="reset">急停复位</button>
+      </div>
+      <div id="safety-state" class="state">未急停</div>
+    </section>
+
+    <section class="panel">
+      <h2>热切换</h2>
+      <div>
+        <label>模型 <input id="model-input" value="yolov8n_fp32"></label>
+        <button data-action="switch_model" data-target="model">切换模型</button>
+      </div>
+      <div>
+        <label>场景 <input id="scene-input" value="scene_race.yaml"></label>
+        <button data-action="switch_scene" data-target="scene">切换场景</button>
+      </div>
+      <div>
+        <label>参数 <input id="param-name" value="nav_speed"><input id="param-value" value="0.9"></label>
+        <button data-action="set_param">调参</button>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>裁判状态与事件</h2>
+      <div id="referee-state">READY</div>
+      <pre id="event-log"></pre>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

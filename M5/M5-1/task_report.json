@@ -1,0 +1,104 @@
+{
+  "task_id": "demo_task",
+  "result": "SUCCESS",
+  "total_elapsed_s": 0.0,
+  "steps": [
+    {
+      "name": "wait_start",
+      "status": "SUCCESS",
+      "elapsed_s": 0.0,
+      "retries": 0,
+      "degraded": false,
+      "timed_out": false
+    },
+    {
+      "name": "navigate_to_scan",
+      "status": "SUCCESS",
+      "elapsed_s": 0.0,
+      "retries": 0,
+      "degraded": false,
+      "timed_out": false
+    },
+    {
+      "name": "detect_qr",
+      "status": "SUCCESS",
+      "elapsed_s": 0.0,
+      "retries": 0,
+      "degraded": false,
+      "timed_out": false
+    },
+    {
+      "name": "grasp",
+      "status": "SUCCESS",
+      "elapsed_s": 0.0,
+      "retries": 0,
+      "degraded": false,
+      "timed_out": false
+    },
+    {
+      "name": "report",
+      "status": "SUCCESS",
+      "elapsed_s": 0.0,
+      "retries": 0,
+      "degraded": false,
+      "timed_out": false
+    },
+    {
+      "name": "parallel_checks",
+      "status": "SUCCESS",
+      "elapsed_s": 0.0,
+      "retries": 0,
+      "degraded": false,
+      "timed_out": false,
+      "branches": [
+        {
+          "name": "check_battery",
+          "status": "SUCCESS",
+          "elapsed_s": 0.0,
+          "retries": 0,
+          "degraded": false,
+          "timed_out": false
+        },
+        {
+          "name": "check_lidar",
+          "status": "SUCCESS",
+          "elapsed_s": 0.0,
+          "retries": 0,
+          "degraded": false,
+          "timed_out": false
+        }
+      ]
+    }
+  ],
+  "final_context": {
+    "task_id": "demo_task",
+    "data": {
+      "last_nav_result": {
+        "status": "SUCCESS"
+      },
+      "last_nav_pose": {
+        "x": 2.0,
+        "y": 0.5,
+        "yaw": 0.0
+      },
+      "target_pose": [
+        2.1,
+        0.4
+      ],
+      "target_id": "qr_01",
+      "grasp_result": {
+        "status": "SUCCESS",
+        "object_pose": [
+          2.1,
+          0.4
+        ]
+      },
+      "object_pose": [
+        2.1,
+        0.4
+      ]
+    },
+    "metadata": {},
+    "abort_reason": null
+  }
+}

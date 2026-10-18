@@ -1,0 +1,14 @@
+Python 3.7+（建议使用 3.9+）
+Python 标准库:
+1.argparse
+2.heapq
+3.json
+4.math
+5.random
+6.sys
+7.time
+8.dataclasses
+9.pathlib
+10.typing
+第三方库:
+1.PyYAML

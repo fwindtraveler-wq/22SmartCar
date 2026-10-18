@@ -1,0 +1,46 @@
+{
+  "timeout": false,
+  "total_duration": 3.1,
+  "tasks": [
+    {
+      "name": "Init",
+      "status": "SUCCESS",
+      "attempts": 1,
+      "duration": 0.52,
+      "started_at": 1792309114.46,
+      "ended_at": 1792309114.98
+    },
+    {
+      "name": "Navigate",
+      "status": "SUCCESS",
+      "attempts": 1,
+      "duration": 0.31,
+      "started_at": 1792309114.98,
+      "ended_at": 1792309115.29
+    },
+    {
+      "name": "Scan",
+      "status": "SUCCESS",
+      "attempts": 1,
+      "duration": 0.3,
+      "started_at": 1792309115.29,
+      "ended_at": 1792309115.59
+    },
+    {
+      "name": "Grasp",
+      "status": "SUCCESS",
+      "attempts": 1,
+      "duration": 1.16,
+      "started_at": 1792309115.6,
+      "ended_at": 1792309116.76
+    },
+    {
+      "name": "Lift",
+      "status": "SUCCESS",
+      "attempts": 1,
+      "duration": 0.79,
+      "started_at": 1792309116.76,
+      "ended_at": 1792309117.55
+    }
+  ]
+}

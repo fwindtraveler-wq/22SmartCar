@@ -1,0 +1,45 @@
+{
+  "timeout": 5.2,
+  "tasks": [
+    {
+      "name": "Grasp",
+      "duration": 1.16,
+      "success_rate": 0.72,
+      "dependencies": [
+        "Scan",
+        "Init"
+      ]
+    },
+    {
+      "name": "Navigate",
+      "duration": 0.31,
+      "success_rate": 0.72,
+      "dependencies": [
+        "Init"
+      ]
+    },
+    {
+      "name": "Init",
+      "duration": 0.52,
+      "success_rate": 0.63,
+      "dependencies": []
+    },
+    {
+      "name": "Scan",
+      "duration": 0.3,
+      "success_rate": 0.81,
+      "dependencies": [
+        "Navigate"
+      ]
+    },
+    {
+      "name": "Lift",
+      "duration": 0.79,
+      "success_rate": 0.98,
+      "dependencies": [
+        "Grasp",
+        "Scan"
+      ]
+    }
+  ]
+}

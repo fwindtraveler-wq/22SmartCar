@@ -1,0 +1,7 @@
+input_csv: data.csv
+columns:
+  x: voltage_a
+  y: voltage_b
+task:
+  name: corr_analysis
+  verbose: true

@@ -1,0 +1,13 @@
+body { margin:0; background:#11161c; color:#dce4ec; font-family:"Segoe UI","Microsoft YaHei",sans-serif; }
+header { display:flex; align-items:center; gap:12px; padding:10px 14px; border-bottom:1px solid #28313c; }
+.title { font-weight:700; }
+.badge { padding:5px 10px; border-radius:8px; background:#3a434d; }
+main { display:grid; grid-template-columns:1fr 1fr; gap:10px; padding:10px; }
+.panel { background:#171d24; border:1px solid #28313c; border-radius:8px; padding:12px; }
+h2 { margin:0 0 10px; font-size:15px; color:#9fb0c1; }
+.buttons { display:flex; flex-wrap:wrap; gap:8px; }
+button { background:#202833; color:#dce4ec; border:1px solid #28313c; border-radius:8px; padding:8px 10px; cursor:pointer; }
+button.danger { background:#f05252; border-color:#f05252; color:white; }
+.state { margin-top:10px; }
+input { background:#0f1419; border:1px solid #28313c; color:#dce4ec; border-radius:6px; padding:6px; margin:5px 5px 5px 0; }
+pre { white-space:pre-wrap; background:#0f1419; border:1px solid #28313c; padding:8px; border-radius:8px; max-height:240px; overflow:auto; font-size:12px; }

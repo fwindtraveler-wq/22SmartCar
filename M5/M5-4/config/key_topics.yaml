@@ -1,0 +1,6 @@
+key_topics:
+  - "/perception/**"
+  - "/navigation/**"
+  - "/control/**"
+  - "/hw/**"
+  - "/task_state"

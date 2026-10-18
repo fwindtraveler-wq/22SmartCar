@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>智能车监控面板</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script id="export-data" type="application/json"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">M5 监控面板</div>
+    <div class="status-lamp" id="system-lamp" title="system_ready">系统待机</div>
+    <select id="scene-select" title="切换场景">
+      <option value="race">比赛</option>
+      <option value="practice">练习</option>
+      <option value="debug">调试</option>
+    </select>
+    <div class="top-actions">
+      <button id="export-btn" title="导出离线快照">导出</button>
+      <button id="record-btn" title="开始录屏">录屏</button>
+      <button id="estop-btn" class="danger" title="紧急停车">紧急停车</button>
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <section class="panel left">
+      <h2>任务状态</h2>
+      <div id="task-state" class="task-state">等待 task_state</div>
+    </section>
+
+    <section class="panel middle-top">
+      <h2>关键指标</h2>
+      <div class="charts">
+        <canvas id="chart-fps" width="420" height="120"></canvas>
+        <canvas id="chart-latency" width="420" height="120"></canvas>
+        <canvas id="chart-nav" width="420" height="120"></canvas>
+      </div>
+      <div id="metric-summary" class="summary">等待数据</div>
+    </section>
+
+    <section class="panel middle-bottom">
+      <h2>故障标签流</h2>
+      <div id="fault-list" class="fault-list">暂无故障</div>
+    </section>
+
+    <section class="panel right">
+      <h2>裁判与系统</h2>
+      <div id="referee-state">无裁判状态</div>
+      <div class="gauges">
+        <div><span id="cpu-value">--</span><br>CPU %</div>
+        <div><span id="temp-value">--</span><br>温度 C</div>
+        <div><span id="volt-value">--</span><br>电压 V</div>
+        <div><span id="rtt-value">--</span><br>网络 RTT</div>
+      </div>
+    </section>
+  </main>
+  <footer id="conn-status">连接中...</footer>
+  <script src="/static/app.js"></script>
+</body>
+</html>

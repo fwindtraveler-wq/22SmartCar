@@ -1,0 +1,16 @@
+{"timestamp": 1000.0, "topic": "/perception/camera", "value": {"confidence": 0.82}}
+{"timestamp": 1000.05, "topic": "/perception/camera", "value": {"confidence": 0.81}}
+{"timestamp": 1000.10, "topic": "/perception/camera", "value": {"confidence": 0.79}}
+{"timestamp": 1000.15, "topic": "/perception/camera", "value": {"confidence": 0.78}}
+{"timestamp": 1000.20, "topic": "/perception/camera", "value": {"confidence": 0.80}}
+{"timestamp": 1000.25, "topic": "/perception/camera", "value": {"confidence": 0.77}}
+{"timestamp": 1000.30, "topic": "/perception/camera", "value": {"confidence": 0.76}}
+{"timestamp": 1000.35, "topic": "/perception/camera", "value": {"confidence": 0.75}}
+{"timestamp": 1000.40, "topic": "/perception/camera", "value": {"confidence": 0.74}}
+{"timestamp": 1000.45, "topic": "/perception/camera", "value": {"confidence": 0.73}}
+{"timestamp": 1002.0, "topic": "/navigation/result", "value": {"status": "FAILED", "elapsed_s": 2.1, "path_deviation": 0.4}}
+{"timestamp": 1003.0, "topic": "/navigation/result", "value": {"status": "FAILED", "elapsed_s": 2.3, "path_deviation": 0.5}}
+{"timestamp": 1004.0, "topic": "/navigation/result", "value": {"status": "SUCCESS", "elapsed_s": 1.9, "path_deviation": 0.3}}
+{"timestamp": 1005.0, "topic": "/hw/temp", "value": {"temperature": 92.0}}
+{"timestamp": 1006.0, "topic": "/hw/cpu", "value": {"percent": 72.0}}
+{"timestamp": 1007.0, "topic": "/hw/battery", "value": {"voltage": 10.2}}

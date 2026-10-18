@@ -1,0 +1,18 @@
+{
+  "case_dir": "/home/blake/workspaces/smartcar/22SmartCar/round1/M0/_grader/out/m03",
+  "n": 43,
+  "mean": 65.5346,
+  "std_population": 11.177778,
+  "std_sample": 11.310064,
+  "keep_count_population": 39,
+  "keep_count_sample": 39,
+  "outliers_high": [
+    96.6998,
+    94.571
+  ],
+  "outliers_low": [
+    34.1868,
+    31.4186
+  ],
+  "expectation": "保留数落在 keep_count_population ~ keep_count_sample 之间，且输出中不含 |v-mean|>2std 的点"
+}

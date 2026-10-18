@@ -1,0 +1,43 @@
+task_id: demo_task
+deadline: 120
+retry_budget: 6
+tasks:
+  - name: wait_start
+    type: WaitForTrigger
+    timeout: 30
+
+  - name: navigate_to_scan
+    type: NavigateTo
+    pose: {x: 2.0, y: 0.5, yaw: 0.0}
+    retry: 2
+    retry_interval: 0.2
+    timeout: 10
+    fallback: wait_start
+
+  - name: detect_qr
+    type: DetectTarget
+    target_class: qrcode
+    min_confidence: 0.7
+    timeout: 15
+    fallback: navigate_to_scan
+
+  - name: grasp
+    type: ExecuteGrasp
+    grasp_type: top_down
+    retry: 2
+    on_fail: skip
+
+  - name: report
+    type: SpeakTTS
+    text: 任务完成
+
+  - name: parallel_checks
+    parallel:
+      fail_policy: any_fail
+      branches:
+        - name: check_battery
+          type: SpeakTTS
+          text: 检查电量
+        - name: check_lidar
+          type: SpeakTTS
+          text: 检查雷达

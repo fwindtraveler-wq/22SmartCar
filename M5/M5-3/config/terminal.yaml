@@ -1,0 +1,13 @@
+user: operator
+port: 8081
+scenes:
+  - scene_race.yaml
+  - scene_practice.yaml
+models:
+  - yolov8n_fp32
+  - yolov8n_int8
+  - yolov8s_fp32
+params:
+  nav_speed: 0.9
+  perception_hz: 20
+  min_confidence: 0.7

@@ -1,0 +1,10 @@
+{"timestamp": 2000.0, "topic": "/perception/camera", "value": {"confidence": 0.86}}
+{"timestamp": 2000.05, "topic": "/perception/camera", "value": {"confidence": 0.87}}
+{"timestamp": 2000.10, "topic": "/perception/camera", "value": {"confidence": 0.88}}
+{"timestamp": 2000.15, "topic": "/perception/camera", "value": {"confidence": 0.87}}
+{"timestamp": 2000.20, "topic": "/perception/camera", "value": {"confidence": 0.88}}
+{"timestamp": 2002.0, "topic": "/navigation/result", "value": {"status": "SUCCESS", "elapsed_s": 1.4, "path_deviation": 0.15}}
+{"timestamp": 2004.0, "topic": "/navigation/result", "value": {"status": "SUCCESS", "elapsed_s": 1.5, "path_deviation": 0.16}}
+{"timestamp": 2005.0, "topic": "/hw/temp", "value": {"temperature": 74.0}}
+{"timestamp": 2006.0, "topic": "/hw/cpu", "value": {"percent": 48.0}}
+{"timestamp": 2007.0, "topic": "/hw/battery", "value": {"voltage": 11.8}}

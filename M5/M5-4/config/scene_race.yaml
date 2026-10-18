@@ -1,0 +1,5 @@
+nav_speed: 1.0
+perception_hz: 20
+min_confidence: 0.7
+grasp_type: top_down
+model: yolov8n_fp32

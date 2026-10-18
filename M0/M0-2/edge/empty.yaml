@@ -1,0 +1,4 @@
+input_csv: empty.csv
+columns:
+  x: voltage_a
+  y: voltage_b

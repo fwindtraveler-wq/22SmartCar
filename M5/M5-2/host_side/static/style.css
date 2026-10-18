@@ -1,0 +1,86 @@
+:root {
+  color-scheme: dark;
+  --bg: #101418;
+  --panel: #171d24;
+  --line: #28313c;
+  --text: #dce4ec;
+  --muted: #7d8b9b;
+  --green: #31c48d;
+  --red: #f05252;
+  --yellow: #f6b83c;
+  --blue: #4f9df7;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--line);
+  background: #0c1014;
+}
+.brand { font-weight: 700; }
+.status-lamp {
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #3a434d;
+  color: white;
+}
+.status-lamp.ready { background: var(--green); }
+.status-lamp.not-ready { background: var(--red); }
+select, button {
+  border: 1px solid var(--line);
+  background: #202833;
+  color: var(--text);
+  border-radius: 8px;
+  padding: 7px 10px;
+}
+button.danger { background: var(--red); border-color: var(--red); color: white; }
+.top-actions { margin-left: auto; display: flex; gap: 8px; }
+
+.dashboard {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 240px 1fr 240px;
+  grid-template-rows: 1fr 1fr;
+  gap: 8px;
+  padding: 8px;
+  min-height: 0;
+}
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px;
+  overflow: auto;
+}
+.left { grid-row: 1 / 3; }
+.middle-top { grid-column: 2; }
+.middle-bottom { grid-column: 2; }
+.right { grid-row: 1 / 3; grid-column: 3; }
+
+h2 { font-size: 15px; margin: 0 0 8px; color: #9fb0c1; }
+.charts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+canvas { width: 100%; height: 120px; background: #0f1419; border: 1px solid var(--line); border-radius: 6px; }
+.summary { margin-top: 8px; color: var(--muted); min-height: 20px; }
+.fault-list { font-size: 13px; }
+.fault-item { padding: 5px 0; border-bottom: 1px dashed var(--line); }
+.fault-item.warning { color: var(--yellow); }
+.fault-item.recovered { color: var(--green); }
+.task-state { white-space: pre-wrap; font-size: 13px; }
+.gauges { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; text-align: center; }
+.gauges div { background: #0f1419; border: 1px solid var(--line); border-radius: 8px; padding: 10px; }
+.gauges span { font-size: 22px; font-weight: 700; }
+#conn-status { padding: 6px 12px; color: var(--muted); border-top: 1px solid var(--line); }
+.stale { opacity: 0.55; }

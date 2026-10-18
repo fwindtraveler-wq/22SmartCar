@@ -1,0 +1,9 @@
+{
+  "task_id": "run_01",
+  "result": "FAILED",
+  "total_elapsed_s": 22.4,
+  "steps": [
+    {"name": "nav", "status": "FAILED", "elapsed_s": 2.1, "retries": 1, "degraded": true}
+  ],
+  "final_context": {"target_id": "qr_01", "target_pose": [2.1, 0.4]}
+}

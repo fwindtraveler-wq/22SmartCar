@@ -1,0 +1,3 @@
+2026-09-22 12:34:56 camera_degraded: freq<10Hz -> nav fallback to lidar_only
+2026-09-22 12:35:10 thermal_throttle: 92C -> model swap to yolov8n_int8
+2026-09-22 12:35:12 navigation timeout -> retry

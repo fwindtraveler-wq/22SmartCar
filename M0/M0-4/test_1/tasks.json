@@ -1,0 +1,58 @@
+{
+  "timeout": 9.6,
+  "tasks": [
+    {
+      "name": "Init",
+      "duration": 0.85,
+      "success_rate": 0.64,
+      "dependencies": []
+    },
+    {
+      "name": "Check5",
+      "duration": 0.98,
+      "success_rate": 0.86,
+      "dependencies": []
+    },
+    {
+      "name": "Lift",
+      "duration": 1.19,
+      "success_rate": 1.0,
+      "dependencies": [
+        "Grasp"
+      ]
+    },
+    {
+      "name": "Grasp",
+      "duration": 1.05,
+      "success_rate": 0.72,
+      "dependencies": [
+        "Scan",
+        "Init"
+      ]
+    },
+    {
+      "name": "Place",
+      "duration": 0.82,
+      "success_rate": 0.71,
+      "dependencies": [
+        "Lift"
+      ]
+    },
+    {
+      "name": "Navigate",
+      "duration": 0.66,
+      "success_rate": 0.66,
+      "dependencies": [
+        "Init"
+      ]
+    },
+    {
+      "name": "Scan",
+      "duration": 1.14,
+      "success_rate": 0.57,
+      "dependencies": [
+        "Navigate"
+      ]
+    }
+  ]
+}
